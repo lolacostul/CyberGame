@@ -1,0 +1,137 @@
+\hypertarget{classEnemy}{}\doxysection{Enemy Class Reference}
+\label{classEnemy}\index{Enemy@{Enemy}}
+
+
+{\ttfamily \#include $<$Enemy.\+hpp$>$}
+
+
+
+Inheritance diagram for Enemy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classEnemy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Enemy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classEnemy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEnemy_a6cb6e3d199dedb9e59234583613a1334}{Enemy}} (float x, float y, sf\+::\+Texture \&texture\+Sheet, bool needs\+Flipping)
+\item 
+virtual \mbox{\hyperlink{classEnemy_a065a22a70c78bfc03da4c032312c6da5}{$\sim$\+Enemy}} ()
+\item 
+void \mbox{\hyperlink{classEnemy_adcc7674fa547a955980771a6d6d1868e}{update\+Attack}} ()
+\item 
+void \mbox{\hyperlink{classEnemy_a931e1346bd0c438af897af7f5971fd0d}{update\+Animation}} (const float \&dt)
+\item 
+virtual void \mbox{\hyperlink{classEnemy_a15a2ffbc2ce77d54e1c186dd4829407c}{update}} (const float \&dt)
+\item 
+int \mbox{\hyperlink{classEnemy_a527dd61a5862f706b0213375c53206fe}{get\+Index}} (std\+::vector$<$ \mbox{\hyperlink{classEnemy}{Enemy}} $\ast$ $>$ v, \mbox{\hyperlink{classEnemy}{Enemy}} $\ast$e)
+\item 
+std\+::string \mbox{\hyperlink{classEnemy_a47213dd11bd61417b1a93086d32956c4}{to\+String}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWeapon}{Weapon}} $\ast$ \mbox{\hyperlink{classEnemy_a01668cda56bdff4964e67ff19d82a936}{\+\_\+weapon}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classEnemy_ab860ae5ac23db475fa82696601bf3437}{operator$<$$<$}} (std\+::ostream \&out, \mbox{\hyperlink{classEnemy}{Enemy}} const \&m)
+\item 
+bool \mbox{\hyperlink{classEnemy_a2dc01b153e7184fedf6f6067d77a6295}{operator==}} (const \mbox{\hyperlink{classEnemy}{Enemy}} \&e1, const \mbox{\hyperlink{classEnemy}{Enemy}} \&e2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEnemy_a6cb6e3d199dedb9e59234583613a1334}\label{classEnemy_a6cb6e3d199dedb9e59234583613a1334}} 
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{sf\+::\+Texture \&}]{texture\+Sheet,  }\item[{bool}]{needs\+Flipping }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEnemy_a065a22a70c78bfc03da4c032312c6da5}\label{classEnemy_a065a22a70c78bfc03da4c032312c6da5}} 
+\index{Enemy@{Enemy}!````~Enemy@{$\sim$Enemy}}
+\index{````~Enemy@{$\sim$Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{$\sim$Enemy()}{~Enemy()}}
+{\footnotesize\ttfamily virtual Enemy\+::$\sim$\+Enemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEnemy_a527dd61a5862f706b0213375c53206fe}\label{classEnemy_a527dd61a5862f706b0213375c53206fe}} 
+\index{Enemy@{Enemy}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getIndex()}{getIndex()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Index (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classEnemy}{Enemy}} $\ast$ $>$}]{v,  }\item[{\mbox{\hyperlink{classEnemy}{Enemy}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEnemy_a47213dd11bd61417b1a93086d32956c4}\label{classEnemy_a47213dd11bd61417b1a93086d32956c4}} 
+\index{Enemy@{Enemy}!toString@{toString}}
+\index{toString@{toString}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Enemy\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classEnemy_a15a2ffbc2ce77d54e1c186dd4829407c}\label{classEnemy_a15a2ffbc2ce77d54e1c186dd4829407c}} 
+\index{Enemy@{Enemy}!update@{update}}
+\index{update@{update}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Enemy\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classCharacter_a8445d9ee6e026254af14c3b33bb0b629}{Character}}.
+
+\mbox{\Hypertarget{classEnemy_a931e1346bd0c438af897af7f5971fd0d}\label{classEnemy_a931e1346bd0c438af897af7f5971fd0d}} 
+\index{Enemy@{Enemy}!updateAnimation@{updateAnimation}}
+\index{updateAnimation@{updateAnimation}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{updateAnimation()}{updateAnimation()}}
+{\footnotesize\ttfamily void Enemy\+::update\+Animation (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classEnemy_adcc7674fa547a955980771a6d6d1868e}\label{classEnemy_adcc7674fa547a955980771a6d6d1868e}} 
+\index{Enemy@{Enemy}!updateAttack@{updateAttack}}
+\index{updateAttack@{updateAttack}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{updateAttack()}{updateAttack()}}
+{\footnotesize\ttfamily void Enemy\+::update\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classEnemy_ab860ae5ac23db475fa82696601bf3437}\label{classEnemy_ab860ae5ac23db475fa82696601bf3437}} 
+\index{Enemy@{Enemy}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{classEnemy}{Enemy}} const \&}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+\mbox{\Hypertarget{classEnemy_a2dc01b153e7184fedf6f6067d77a6295}\label{classEnemy_a2dc01b153e7184fedf6f6067d77a6295}} 
+\index{Enemy@{Enemy}!operator==@{operator==}}
+\index{operator==@{operator==}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEnemy}{Enemy}} \&}]{e1,  }\item[{const \mbox{\hyperlink{classEnemy}{Enemy}} \&}]{e2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classEnemy_a01668cda56bdff4964e67ff19d82a936}\label{classEnemy_a01668cda56bdff4964e67ff19d82a936}} 
+\index{Enemy@{Enemy}!\_weapon@{\_weapon}}
+\index{\_weapon@{\_weapon}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{\_weapon}{\_weapon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWeapon}{Weapon}}$\ast$ Enemy\+::\+\_\+weapon\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Enemy_8hpp}{Enemy.\+hpp}}\item 
+\mbox{\hyperlink{Enemy_8cpp}{Enemy.\+cpp}}\end{DoxyCompactItemize}

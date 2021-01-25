@@ -1,0 +1,110 @@
+\hypertarget{classGameState}{}\doxysection{Game\+State Class Reference}
+\label{classGameState}\index{GameState@{GameState}}
+
+
+{\ttfamily \#include $<$Game\+State.\+hpp$>$}
+
+
+
+Inheritance diagram for Game\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classGameState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGameState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameState_a930c1f4560cbf8728529be747d5dc54f}{Game\+State}} (sf\+::\+Render\+Window $\ast$window, std\+::map$<$ std\+::string, int $>$ $\ast$supported\+Keys, std\+::stack$<$ \mbox{\hyperlink{classState}{State}} $\ast$ $>$ $\ast$states)
+\item 
+virtual \mbox{\hyperlink{classGameState_ae623df5042cd0c17daa3394fdcb397b3}{$\sim$\+Game\+State}} ()
+\item 
+void \mbox{\hyperlink{classGameState_a5dc4ac4f28b9487c9e35b8c452c7c58f}{update\+Input}} (const float \&dt)
+\item 
+void \mbox{\hyperlink{classGameState_ad75e7439c5c34ce67fdaab1c40b43703}{update\+Score}} ()
+\item 
+void \mbox{\hyperlink{classGameState_a11411e24d1a3cf2b64564d4d478fc8d6}{update\+Combat}} (\mbox{\hyperlink{classEnemy}{Enemy}} $\ast$enemy, const float \&dt)
+\item 
+void \mbox{\hyperlink{classGameState_ac135e64a5c269ecc94d806ed5255ca4b}{update}} (const float \&dt)
+\item 
+void \mbox{\hyperlink{classGameState_ae49b20a5455335d879340dbe3b92da7f}{render}} (sf\+::\+Render\+Target $\ast$target=NULL)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGameState_a930c1f4560cbf8728529be747d5dc54f}\label{classGameState_a930c1f4560cbf8728529be747d5dc54f}} 
+\index{GameState@{GameState}!GameState@{GameState}}
+\index{GameState@{GameState}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{GameState()}{GameState()}}
+{\footnotesize\ttfamily Game\+State\+::\+Game\+State (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window,  }\item[{std\+::map$<$ std\+::string, int $>$ $\ast$}]{supported\+Keys,  }\item[{std\+::stack$<$ \mbox{\hyperlink{classState}{State}} $\ast$ $>$ $\ast$}]{states }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGameState_ae623df5042cd0c17daa3394fdcb397b3}\label{classGameState_ae623df5042cd0c17daa3394fdcb397b3}} 
+\index{GameState@{GameState}!````~GameState@{$\sim$GameState}}
+\index{````~GameState@{$\sim$GameState}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{$\sim$GameState()}{~GameState()}}
+{\footnotesize\ttfamily Game\+State\+::$\sim$\+Game\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGameState_ae49b20a5455335d879340dbe3b92da7f}\label{classGameState_ae49b20a5455335d879340dbe3b92da7f}} 
+\index{GameState@{GameState}!render@{render}}
+\index{render@{render}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Game\+State\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_a92fa422a8748533704eb163ad3299ca8}{State}}.
+
+\mbox{\Hypertarget{classGameState_ac135e64a5c269ecc94d806ed5255ca4b}\label{classGameState_ac135e64a5c269ecc94d806ed5255ca4b}} 
+\index{GameState@{GameState}!update@{update}}
+\index{update@{update}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Game\+State\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_a2c2021d448defc57111202b74ed0aaa0}{State}}.
+
+\mbox{\Hypertarget{classGameState_a11411e24d1a3cf2b64564d4d478fc8d6}\label{classGameState_a11411e24d1a3cf2b64564d4d478fc8d6}} 
+\index{GameState@{GameState}!updateCombat@{updateCombat}}
+\index{updateCombat@{updateCombat}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{updateCombat()}{updateCombat()}}
+{\footnotesize\ttfamily void Game\+State\+::update\+Combat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEnemy}{Enemy}} $\ast$}]{enemy,  }\item[{const float \&}]{dt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGameState_a5dc4ac4f28b9487c9e35b8c452c7c58f}\label{classGameState_a5dc4ac4f28b9487c9e35b8c452c7c58f}} 
+\index{GameState@{GameState}!updateInput@{updateInput}}
+\index{updateInput@{updateInput}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{updateInput()}{updateInput()}}
+{\footnotesize\ttfamily void Game\+State\+::update\+Input (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_a00168e8529643611cb98497e9f0b48c2}{State}}.
+
+\mbox{\Hypertarget{classGameState_ad75e7439c5c34ce67fdaab1c40b43703}\label{classGameState_ad75e7439c5c34ce67fdaab1c40b43703}} 
+\index{GameState@{GameState}!updateScore@{updateScore}}
+\index{updateScore@{updateScore}!GameState@{GameState}}
+\doxysubsubsection{\texorpdfstring{updateScore()}{updateScore()}}
+{\footnotesize\ttfamily void Game\+State\+::update\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{GameState_8hpp}{Game\+State.\+hpp}}\item 
+\mbox{\hyperlink{GameState_8cpp}{Game\+State.\+cpp}}\end{DoxyCompactItemize}

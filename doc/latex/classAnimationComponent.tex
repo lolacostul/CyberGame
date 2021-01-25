@@ -1,0 +1,79 @@
+\hypertarget{classAnimationComponent}{}\doxysection{Animation\+Component Class Reference}
+\label{classAnimationComponent}\index{AnimationComponent@{AnimationComponent}}
+
+
+{\ttfamily \#include $<$Animation\+Component.\+hpp$>$}
+
+
+
+Collaboration diagram for Animation\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classAnimationComponent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAnimationComponent_a9fb7cf41c3901b7efc8c2034ca95c2b7}{Animation\+Component}} (sf\+::\+Sprite \&sprite, sf\+::\+Texture \&texture\+Sheet)
+\item 
+virtual \mbox{\hyperlink{classAnimationComponent_ad35cdc747a5578fdea681486f063f515}{$\sim$\+Animation\+Component}} ()
+\item 
+const bool \& \mbox{\hyperlink{classAnimationComponent_a82e956ffa6989bfbade3447c58f413a6}{is\+Done}} (const std\+::string key)
+\item 
+void \mbox{\hyperlink{classAnimationComponent_ac5c4857d42a6f528ae611ef394159276}{add\+Animation}} (const std\+::string key, float animation\+Timer, int start\+FrameX, int start\+FrameY, int framesX, int framesY, int width, int height)
+\item 
+const bool \& \mbox{\hyperlink{classAnimationComponent_a4da5d38efe9e6c670e2a7a107e500bfb}{play}} (const std\+::string key, const float \&dt, const bool priority=false)
+\item 
+const bool \& \mbox{\hyperlink{classAnimationComponent_ab22243ea2ad08854b47fa631cf8f4390}{play}} (const std\+::string key, const float \&dt, const float \&modifier, const float modifier\+Max, const bool priority=false)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAnimationComponent_a9fb7cf41c3901b7efc8c2034ca95c2b7}\label{classAnimationComponent_a9fb7cf41c3901b7efc8c2034ca95c2b7}} 
+\index{AnimationComponent@{AnimationComponent}!AnimationComponent@{AnimationComponent}}
+\index{AnimationComponent@{AnimationComponent}!AnimationComponent@{AnimationComponent}}
+\doxysubsubsection{\texorpdfstring{AnimationComponent()}{AnimationComponent()}}
+{\footnotesize\ttfamily Animation\+Component\+::\+Animation\+Component (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{sprite,  }\item[{sf\+::\+Texture \&}]{texture\+Sheet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimationComponent_ad35cdc747a5578fdea681486f063f515}\label{classAnimationComponent_ad35cdc747a5578fdea681486f063f515}} 
+\index{AnimationComponent@{AnimationComponent}!````~AnimationComponent@{$\sim$AnimationComponent}}
+\index{````~AnimationComponent@{$\sim$AnimationComponent}!AnimationComponent@{AnimationComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$AnimationComponent()}{~AnimationComponent()}}
+{\footnotesize\ttfamily Animation\+Component\+::$\sim$\+Animation\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAnimationComponent_ac5c4857d42a6f528ae611ef394159276}\label{classAnimationComponent_ac5c4857d42a6f528ae611ef394159276}} 
+\index{AnimationComponent@{AnimationComponent}!addAnimation@{addAnimation}}
+\index{addAnimation@{addAnimation}!AnimationComponent@{AnimationComponent}}
+\doxysubsubsection{\texorpdfstring{addAnimation()}{addAnimation()}}
+{\footnotesize\ttfamily void Animation\+Component\+::add\+Animation (\begin{DoxyParamCaption}\item[{const std\+::string}]{key,  }\item[{float}]{animation\+Timer,  }\item[{int}]{start\+FrameX,  }\item[{int}]{start\+FrameY,  }\item[{int}]{framesX,  }\item[{int}]{framesY,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimationComponent_a82e956ffa6989bfbade3447c58f413a6}\label{classAnimationComponent_a82e956ffa6989bfbade3447c58f413a6}} 
+\index{AnimationComponent@{AnimationComponent}!isDone@{isDone}}
+\index{isDone@{isDone}!AnimationComponent@{AnimationComponent}}
+\doxysubsubsection{\texorpdfstring{isDone()}{isDone()}}
+{\footnotesize\ttfamily const bool \& Animation\+Component\+::is\+Done (\begin{DoxyParamCaption}\item[{const std\+::string}]{key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimationComponent_a4da5d38efe9e6c670e2a7a107e500bfb}\label{classAnimationComponent_a4da5d38efe9e6c670e2a7a107e500bfb}} 
+\index{AnimationComponent@{AnimationComponent}!play@{play}}
+\index{play@{play}!AnimationComponent@{AnimationComponent}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const bool \& Animation\+Component\+::play (\begin{DoxyParamCaption}\item[{const std\+::string}]{key,  }\item[{const float \&}]{dt,  }\item[{const bool}]{priority = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classAnimationComponent_ab22243ea2ad08854b47fa631cf8f4390}\label{classAnimationComponent_ab22243ea2ad08854b47fa631cf8f4390}} 
+\index{AnimationComponent@{AnimationComponent}!play@{play}}
+\index{play@{play}!AnimationComponent@{AnimationComponent}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const bool \& Animation\+Component\+::play (\begin{DoxyParamCaption}\item[{const std\+::string}]{key,  }\item[{const float \&}]{dt,  }\item[{const float \&}]{modifier,  }\item[{const float}]{modifier\+Max,  }\item[{const bool}]{priority = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{AnimationComponent_8hpp}{Animation\+Component.\+hpp}}\item 
+\mbox{\hyperlink{AnimationComponent_8cpp}{Animation\+Component.\+cpp}}\end{DoxyCompactItemize}

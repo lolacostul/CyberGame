@@ -1,0 +1,377 @@
+\hypertarget{classCharacter}{}\doxysection{Character Class Reference}
+\label{classCharacter}\index{Character@{Character}}
+
+
+{\ttfamily \#include $<$Character.\+hpp$>$}
+
+
+
+Inheritance diagram for Character\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCharacter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Character\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCharacter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCharacter_adc27bdd255876169bad2ed0bae0cffb5}{Character}} ()
+\item 
+\mbox{\hyperlink{classCharacter_a9e9be564d05ded80962b2045aa70b3fc}{$\sim$\+Character}} ()
+\item 
+void \mbox{\hyperlink{classCharacter_a6b02ff4fdc8fccc815af740ffa87522b}{set\+\_\+character\+Class}} (std\+::string given\+Name)
+\item 
+void \mbox{\hyperlink{classCharacter_aeab1980f554969dae9ab2e8d880f73f3}{set\+\_\+race}} (std\+::string given\+Race)
+\item 
+void \mbox{\hyperlink{classCharacter_a7c2e08d535feea2339994256bc4ea79b}{set\+\_\+hp}} (int given\+HP)
+\item 
+void \mbox{\hyperlink{classCharacter_a57c2bee1658184b0779ecef3a49b0645}{set\+\_\+mana}} (int given\+Mana)
+\item 
+void \mbox{\hyperlink{classCharacter_ab9cfd5cf82b7c0d92591262153241ba8}{set\+\_\+is\+Dead}} (bool given\+Is\+Dead)
+\item 
+std\+::string \mbox{\hyperlink{classCharacter_a6019388cb3dd925a73073eee3f675d80}{get\+\_\+character\+Class}} () const
+\item 
+std\+::string \mbox{\hyperlink{classCharacter_a5483c1d0195fd3f143f835a05fcdecbb}{get\+\_\+race}} () const
+\item 
+int \mbox{\hyperlink{classCharacter_a2505da59bef541d2224af270010d03b5}{get\+\_\+hp}} () const
+\item 
+int \mbox{\hyperlink{classCharacter_a36e8a2661a20cc4bf6d799fa8129a2a0}{get\+\_\+mana}} () const
+\item 
+bool \mbox{\hyperlink{classCharacter_aaf5762a57338e9cda055649bd5fa203d}{get\+\_\+is\+Dead}} () const
+\item 
+const sf\+::\+Vector2f \& \mbox{\hyperlink{classCharacter_aa07e2cfa12d28c14a1843455df396ee6}{get\+Position}} () const
+\item 
+const sf\+::\+Float\+Rect \mbox{\hyperlink{classCharacter_ae8ca5554da56aa5aba9e7c80b440ee5b}{get\+Global\+Bounds}} () const
+\item 
+virtual void \mbox{\hyperlink{classCharacter_a9a23c640748197fa1bcf8970d35ae6c5}{suffer\+Damages}} (int nb\+Damages)
+\item 
+virtual void \mbox{\hyperlink{classCharacter_a8233fa42a3e8d76ed575701534342efe}{attack}} (\mbox{\hyperlink{classCharacter}{Character}} \&cible, int damages)
+\item 
+void \mbox{\hyperlink{classCharacter_ac2dd22f9c819c7e166a4b8254e484207}{heal}} (int nb\+Heal)
+\item 
+void \mbox{\hyperlink{classCharacter_ae914e6a2c84e277d0d7fc6309bd897d2}{is\+Alive}} ()
+\item 
+void \mbox{\hyperlink{classCharacter_ad81432c6fbc63b2deb8164dcb0d065d0}{flip\+Sprite}} ()
+\item 
+void \mbox{\hyperlink{classCharacter_ab701f9e78d964af0fa8b4f92d85719a1}{set\+Texture}} (sf\+::\+Texture \&texture)
+\item 
+void \mbox{\hyperlink{classCharacter_ab53ba8869f52048633d35553cf6c995f}{set\+Position}} (float x, float y)
+\item 
+void \mbox{\hyperlink{classCharacter_a87f4707bc77c67ceef7b77588760477c}{create\+Hitbox\+Component}} (sf\+::\+Sprite \&sprite, float offsetX, float offsetY, float width, float height, sf\+::\+Color outline\+Color)
+\item 
+void \mbox{\hyperlink{classCharacter_ae77407f4780473a98883bb4386fd0987}{create\+Movement\+Component}} (const float max\+Velocity, const float acceleration, const float deceleration)
+\item 
+void \mbox{\hyperlink{classCharacter_a7892d30865ace8d70166cefd25b3db10}{create\+Animation\+Component}} (sf\+::\+Texture \&texture\+Sheet)
+\item 
+virtual void \mbox{\hyperlink{classCharacter_a8445d9ee6e026254af14c3b33bb0b629}{update}} (const float \&dt)
+\item 
+virtual void \mbox{\hyperlink{classCharacter_a5760e593d7f33862989c07a313360009}{render}} (sf\+::\+Render\+Target \&target)
+\item 
+virtual void \mbox{\hyperlink{classCharacter_adaa40abf2f08930772cc9570de726c6e}{move}} (const float x, const float y, const float \&dt)
+\item 
+std\+::string \mbox{\hyperlink{classCharacter_a66107d0429bccd9bef2708421f2a8e88}{to\+String}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classCharacter_abc9cb47a89e01cb612d49a9a2b4779f3}{\+\_\+character\+Class}}
+\item 
+std\+::string \mbox{\hyperlink{classCharacter_a5ab37f8159de3d502c12a54d6907bee1}{\+\_\+race}}
+\item 
+int \mbox{\hyperlink{classCharacter_acb4e455e6df3b0fe9444e6b1d61ced31}{\+\_\+id}}
+\item 
+int \mbox{\hyperlink{classCharacter_a252d416dea061a66dc080017ead49489}{\+\_\+hp}}
+\item 
+int \mbox{\hyperlink{classCharacter_aca6318b45bf400f9ea0e3893e96c9930}{\+\_\+mana}}
+\item 
+bool \mbox{\hyperlink{classCharacter_ab6d7636befa6734bed2296c06b2af2b1}{\+\_\+is\+Dead}}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classCharacter_a291f4c1dc2208baeac22caf3a4913dac}{\+\_\+race\+Vect}} \{\char`\"{}Human\char`\"{}, \char`\"{}Cyborg\char`\"{}, \char`\"{}Android\char`\"{}, \char`\"{}Undead\+Cyborg\char`\"{}\}
+\item 
+sf\+::\+Sprite \mbox{\hyperlink{classCharacter_ab3b89d967b817bc3e199ed70f6b6277a}{\+\_\+sprite}}
+\item 
+\mbox{\hyperlink{classHitboxComponent}{Hitbox\+Component}} $\ast$ \mbox{\hyperlink{classCharacter_a8c215a8fe212f5de934732f8e25d7715}{\+\_\+hitbox\+Component}}
+\item 
+\mbox{\hyperlink{classMovementComponent}{Movement\+Component}} $\ast$ \mbox{\hyperlink{classCharacter_a971f560af2a5f59643d09f78cbb890ab}{\+\_\+movement\+Component}}
+\item 
+\mbox{\hyperlink{classAnimationComponent}{Animation\+Component}} $\ast$ \mbox{\hyperlink{classCharacter_ab27ed000726dd87e2d3b9814f064d90d}{\+\_\+animation\+Component}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classCharacter_a15dc3a8f5a8c3cb2c00392a1e0343915}{operator$<$$<$}} (std\+::ostream \&out, \mbox{\hyperlink{classCharacter}{Character}} const \&c)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCharacter_adc27bdd255876169bad2ed0bae0cffb5}\label{classCharacter_adc27bdd255876169bad2ed0bae0cffb5}} 
+\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{Character()}{Character()}}
+{\footnotesize\ttfamily Character\+::\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCharacter_a9e9be564d05ded80962b2045aa70b3fc}\label{classCharacter_a9e9be564d05ded80962b2045aa70b3fc}} 
+\index{Character@{Character}!````~Character@{$\sim$Character}}
+\index{````~Character@{$\sim$Character}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{$\sim$Character()}{~Character()}}
+{\footnotesize\ttfamily Character\+::$\sim$\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCharacter_a8233fa42a3e8d76ed575701534342efe}\label{classCharacter_a8233fa42a3e8d76ed575701534342efe}} 
+\index{Character@{Character}!attack@{attack}}
+\index{attack@{attack}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily void Character\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCharacter}{Character}} \&}]{cible,  }\item[{int}]{damages }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classCharacter_a7892d30865ace8d70166cefd25b3db10}\label{classCharacter_a7892d30865ace8d70166cefd25b3db10}} 
+\index{Character@{Character}!createAnimationComponent@{createAnimationComponent}}
+\index{createAnimationComponent@{createAnimationComponent}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{createAnimationComponent()}{createAnimationComponent()}}
+{\footnotesize\ttfamily void Character\+::create\+Animation\+Component (\begin{DoxyParamCaption}\item[{sf\+::\+Texture \&}]{texture\+Sheet }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCharacter_a87f4707bc77c67ceef7b77588760477c}\label{classCharacter_a87f4707bc77c67ceef7b77588760477c}} 
+\index{Character@{Character}!createHitboxComponent@{createHitboxComponent}}
+\index{createHitboxComponent@{createHitboxComponent}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{createHitboxComponent()}{createHitboxComponent()}}
+{\footnotesize\ttfamily void Character\+::create\+Hitbox\+Component (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{sprite,  }\item[{float}]{offsetX,  }\item[{float}]{offsetY,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{sf\+::\+Color}]{outline\+Color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCharacter_ae77407f4780473a98883bb4386fd0987}\label{classCharacter_ae77407f4780473a98883bb4386fd0987}} 
+\index{Character@{Character}!createMovementComponent@{createMovementComponent}}
+\index{createMovementComponent@{createMovementComponent}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{createMovementComponent()}{createMovementComponent()}}
+{\footnotesize\ttfamily void Character\+::create\+Movement\+Component (\begin{DoxyParamCaption}\item[{const float}]{max\+Velocity,  }\item[{const float}]{acceleration,  }\item[{const float}]{deceleration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCharacter_ad81432c6fbc63b2deb8164dcb0d065d0}\label{classCharacter_ad81432c6fbc63b2deb8164dcb0d065d0}} 
+\index{Character@{Character}!flipSprite@{flipSprite}}
+\index{flipSprite@{flipSprite}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{flipSprite()}{flipSprite()}}
+{\footnotesize\ttfamily void Character\+::flip\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCharacter_a6019388cb3dd925a73073eee3f675d80}\label{classCharacter_a6019388cb3dd925a73073eee3f675d80}} 
+\index{Character@{Character}!get\_characterClass@{get\_characterClass}}
+\index{get\_characterClass@{get\_characterClass}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{get\_characterClass()}{get\_characterClass()}}
+{\footnotesize\ttfamily std\+::string Character\+::get\+\_\+character\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCharacter_a2505da59bef541d2224af270010d03b5}\label{classCharacter_a2505da59bef541d2224af270010d03b5}} 
+\index{Character@{Character}!get\_hp@{get\_hp}}
+\index{get\_hp@{get\_hp}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{get\_hp()}{get\_hp()}}
+{\footnotesize\ttfamily int Character\+::get\+\_\+hp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCharacter_aaf5762a57338e9cda055649bd5fa203d}\label{classCharacter_aaf5762a57338e9cda055649bd5fa203d}} 
+\index{Character@{Character}!get\_isDead@{get\_isDead}}
+\index{get\_isDead@{get\_isDead}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{get\_isDead()}{get\_isDead()}}
+{\footnotesize\ttfamily bool Character\+::get\+\_\+is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCharacter_a36e8a2661a20cc4bf6d799fa8129a2a0}\label{classCharacter_a36e8a2661a20cc4bf6d799fa8129a2a0}} 
+\index{Character@{Character}!get\_mana@{get\_mana}}
+\index{get\_mana@{get\_mana}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{get\_mana()}{get\_mana()}}
+{\footnotesize\ttfamily int Character\+::get\+\_\+mana (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCharacter_a5483c1d0195fd3f143f835a05fcdecbb}\label{classCharacter_a5483c1d0195fd3f143f835a05fcdecbb}} 
+\index{Character@{Character}!get\_race@{get\_race}}
+\index{get\_race@{get\_race}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{get\_race()}{get\_race()}}
+{\footnotesize\ttfamily std\+::string Character\+::get\+\_\+race (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCharacter_ae8ca5554da56aa5aba9e7c80b440ee5b}\label{classCharacter_ae8ca5554da56aa5aba9e7c80b440ee5b}} 
+\index{Character@{Character}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily const sf\+::\+Float\+Rect Character\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classCharacter_aa07e2cfa12d28c14a1843455df396ee6}\label{classCharacter_aa07e2cfa12d28c14a1843455df396ee6}} 
+\index{Character@{Character}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily const sf\+::\+Vector2f \& Character\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classCharacter_ac2dd22f9c819c7e166a4b8254e484207}\label{classCharacter_ac2dd22f9c819c7e166a4b8254e484207}} 
+\index{Character@{Character}!heal@{heal}}
+\index{heal@{heal}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{heal()}{heal()}}
+{\footnotesize\ttfamily void Character\+::heal (\begin{DoxyParamCaption}\item[{int}]{nb\+Heal }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCharacter_ae914e6a2c84e277d0d7fc6309bd897d2}\label{classCharacter_ae914e6a2c84e277d0d7fc6309bd897d2}} 
+\index{Character@{Character}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{isAlive()}{isAlive()}}
+{\footnotesize\ttfamily void Character\+::is\+Alive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCharacter_adaa40abf2f08930772cc9570de726c6e}\label{classCharacter_adaa40abf2f08930772cc9570de726c6e}} 
+\index{Character@{Character}!move@{move}}
+\index{move@{move}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Character\+::move (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y,  }\item[{const float \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classCharacter_a5760e593d7f33862989c07a313360009}\label{classCharacter_a5760e593d7f33862989c07a313360009}} 
+\index{Character@{Character}!render@{render}}
+\index{render@{render}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Character\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classCharacter_a6b02ff4fdc8fccc815af740ffa87522b}\label{classCharacter_a6b02ff4fdc8fccc815af740ffa87522b}} 
+\index{Character@{Character}!set\_characterClass@{set\_characterClass}}
+\index{set\_characterClass@{set\_characterClass}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{set\_characterClass()}{set\_characterClass()}}
+{\footnotesize\ttfamily void Character\+::set\+\_\+character\+Class (\begin{DoxyParamCaption}\item[{std\+::string}]{given\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCharacter_a7c2e08d535feea2339994256bc4ea79b}\label{classCharacter_a7c2e08d535feea2339994256bc4ea79b}} 
+\index{Character@{Character}!set\_hp@{set\_hp}}
+\index{set\_hp@{set\_hp}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{set\_hp()}{set\_hp()}}
+{\footnotesize\ttfamily void Character\+::set\+\_\+hp (\begin{DoxyParamCaption}\item[{int}]{given\+HP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCharacter_ab9cfd5cf82b7c0d92591262153241ba8}\label{classCharacter_ab9cfd5cf82b7c0d92591262153241ba8}} 
+\index{Character@{Character}!set\_isDead@{set\_isDead}}
+\index{set\_isDead@{set\_isDead}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{set\_isDead()}{set\_isDead()}}
+{\footnotesize\ttfamily void Character\+::set\+\_\+is\+Dead (\begin{DoxyParamCaption}\item[{bool}]{given\+Is\+Dead }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCharacter_a57c2bee1658184b0779ecef3a49b0645}\label{classCharacter_a57c2bee1658184b0779ecef3a49b0645}} 
+\index{Character@{Character}!set\_mana@{set\_mana}}
+\index{set\_mana@{set\_mana}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{set\_mana()}{set\_mana()}}
+{\footnotesize\ttfamily void Character\+::set\+\_\+mana (\begin{DoxyParamCaption}\item[{int}]{given\+Mana }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCharacter_aeab1980f554969dae9ab2e8d880f73f3}\label{classCharacter_aeab1980f554969dae9ab2e8d880f73f3}} 
+\index{Character@{Character}!set\_race@{set\_race}}
+\index{set\_race@{set\_race}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{set\_race()}{set\_race()}}
+{\footnotesize\ttfamily void Character\+::set\+\_\+race (\begin{DoxyParamCaption}\item[{std\+::string}]{given\+Race }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCharacter_ab53ba8869f52048633d35553cf6c995f}\label{classCharacter_ab53ba8869f52048633d35553cf6c995f}} 
+\index{Character@{Character}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Character\+::set\+Position (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCharacter_ab701f9e78d964af0fa8b4f92d85719a1}\label{classCharacter_ab701f9e78d964af0fa8b4f92d85719a1}} 
+\index{Character@{Character}!setTexture@{setTexture}}
+\index{setTexture@{setTexture}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{setTexture()}{setTexture()}}
+{\footnotesize\ttfamily void Character\+::set\+Texture (\begin{DoxyParamCaption}\item[{sf\+::\+Texture \&}]{texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCharacter_a9a23c640748197fa1bcf8970d35ae6c5}\label{classCharacter_a9a23c640748197fa1bcf8970d35ae6c5}} 
+\index{Character@{Character}!sufferDamages@{sufferDamages}}
+\index{sufferDamages@{sufferDamages}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{sufferDamages()}{sufferDamages()}}
+{\footnotesize\ttfamily void Character\+::suffer\+Damages (\begin{DoxyParamCaption}\item[{int}]{nb\+Damages }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classCharacter_a66107d0429bccd9bef2708421f2a8e88}\label{classCharacter_a66107d0429bccd9bef2708421f2a8e88}} 
+\index{Character@{Character}!toString@{toString}}
+\index{toString@{toString}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Character\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classCharacter_a8445d9ee6e026254af14c3b33bb0b629}\label{classCharacter_a8445d9ee6e026254af14c3b33bb0b629}} 
+\index{Character@{Character}!update@{update}}
+\index{update@{update}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Character\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classPlayer_a5304fa0736910ab6ebf822fb494784c8}{Player}}, and \mbox{\hyperlink{classEnemy_a15a2ffbc2ce77d54e1c186dd4829407c}{Enemy}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classCharacter_a15dc3a8f5a8c3cb2c00392a1e0343915}\label{classCharacter_a15dc3a8f5a8c3cb2c00392a1e0343915}} 
+\index{Character@{Character}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{classCharacter}{Character}} const \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCharacter_ab27ed000726dd87e2d3b9814f064d90d}\label{classCharacter_ab27ed000726dd87e2d3b9814f064d90d}} 
+\index{Character@{Character}!\_animationComponent@{\_animationComponent}}
+\index{\_animationComponent@{\_animationComponent}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\_animationComponent}{\_animationComponent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAnimationComponent}{Animation\+Component}}$\ast$ Character\+::\+\_\+animation\+Component\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCharacter_abc9cb47a89e01cb612d49a9a2b4779f3}\label{classCharacter_abc9cb47a89e01cb612d49a9a2b4779f3}} 
+\index{Character@{Character}!\_characterClass@{\_characterClass}}
+\index{\_characterClass@{\_characterClass}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\_characterClass}{\_characterClass}}
+{\footnotesize\ttfamily std\+::string Character\+::\+\_\+character\+Class\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCharacter_a8c215a8fe212f5de934732f8e25d7715}\label{classCharacter_a8c215a8fe212f5de934732f8e25d7715}} 
+\index{Character@{Character}!\_hitboxComponent@{\_hitboxComponent}}
+\index{\_hitboxComponent@{\_hitboxComponent}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\_hitboxComponent}{\_hitboxComponent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHitboxComponent}{Hitbox\+Component}}$\ast$ Character\+::\+\_\+hitbox\+Component\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCharacter_a252d416dea061a66dc080017ead49489}\label{classCharacter_a252d416dea061a66dc080017ead49489}} 
+\index{Character@{Character}!\_hp@{\_hp}}
+\index{\_hp@{\_hp}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\_hp}{\_hp}}
+{\footnotesize\ttfamily int Character\+::\+\_\+hp\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCharacter_acb4e455e6df3b0fe9444e6b1d61ced31}\label{classCharacter_acb4e455e6df3b0fe9444e6b1d61ced31}} 
+\index{Character@{Character}!\_id@{\_id}}
+\index{\_id@{\_id}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\_id}{\_id}}
+{\footnotesize\ttfamily int Character\+::\+\_\+id\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCharacter_ab6d7636befa6734bed2296c06b2af2b1}\label{classCharacter_ab6d7636befa6734bed2296c06b2af2b1}} 
+\index{Character@{Character}!\_isDead@{\_isDead}}
+\index{\_isDead@{\_isDead}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\_isDead}{\_isDead}}
+{\footnotesize\ttfamily bool Character\+::\+\_\+is\+Dead\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCharacter_aca6318b45bf400f9ea0e3893e96c9930}\label{classCharacter_aca6318b45bf400f9ea0e3893e96c9930}} 
+\index{Character@{Character}!\_mana@{\_mana}}
+\index{\_mana@{\_mana}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\_mana}{\_mana}}
+{\footnotesize\ttfamily int Character\+::\+\_\+mana\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCharacter_a971f560af2a5f59643d09f78cbb890ab}\label{classCharacter_a971f560af2a5f59643d09f78cbb890ab}} 
+\index{Character@{Character}!\_movementComponent@{\_movementComponent}}
+\index{\_movementComponent@{\_movementComponent}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\_movementComponent}{\_movementComponent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMovementComponent}{Movement\+Component}}$\ast$ Character\+::\+\_\+movement\+Component\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCharacter_a5ab37f8159de3d502c12a54d6907bee1}\label{classCharacter_a5ab37f8159de3d502c12a54d6907bee1}} 
+\index{Character@{Character}!\_race@{\_race}}
+\index{\_race@{\_race}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\_race}{\_race}}
+{\footnotesize\ttfamily std\+::string Character\+::\+\_\+race\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCharacter_a291f4c1dc2208baeac22caf3a4913dac}\label{classCharacter_a291f4c1dc2208baeac22caf3a4913dac}} 
+\index{Character@{Character}!\_raceVect@{\_raceVect}}
+\index{\_raceVect@{\_raceVect}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\_raceVect}{\_raceVect}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Character\+::\+\_\+race\+Vect \{\char`\"{}Human\char`\"{}, \char`\"{}Cyborg\char`\"{}, \char`\"{}Android\char`\"{}, \char`\"{}Undead\+Cyborg\char`\"{}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCharacter_ab3b89d967b817bc3e199ed70f6b6277a}\label{classCharacter_ab3b89d967b817bc3e199ed70f6b6277a}} 
+\index{Character@{Character}!\_sprite@{\_sprite}}
+\index{\_sprite@{\_sprite}!Character@{Character}}
+\doxysubsubsection{\texorpdfstring{\_sprite}{\_sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Character\+::\+\_\+sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Character_8hpp}{Character.\+hpp}}\item 
+\mbox{\hyperlink{Character_8cpp}{Character.\+cpp}}\end{DoxyCompactItemize}

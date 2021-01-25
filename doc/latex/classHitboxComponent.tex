@@ -1,0 +1,87 @@
+\hypertarget{classHitboxComponent}{}\doxysection{Hitbox\+Component Class Reference}
+\label{classHitboxComponent}\index{HitboxComponent@{HitboxComponent}}
+
+
+{\ttfamily \#include $<$Hitbox\+Component.\+hpp$>$}
+
+
+
+Collaboration diagram for Hitbox\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classHitboxComponent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHitboxComponent_a1533a6f2ade5ceb2c89f059c0e41751a}{Hitbox\+Component}} (sf\+::\+Sprite \&sprite, float offsetX, float offsetY, float width, float height, sf\+::\+Color outline\+Color)
+\item 
+virtual \mbox{\hyperlink{classHitboxComponent_a57fd2fb82df152e2ddcba0aceb3cce98}{$\sim$\+Hitbox\+Component}} ()
+\item 
+const sf\+::\+Vector2f \& \mbox{\hyperlink{classHitboxComponent_a87ea2f98e1a6bce91e8b9f9d31aad495}{get\+Position}} () const
+\item 
+const sf\+::\+Float\+Rect \mbox{\hyperlink{classHitboxComponent_a1aaeded1d180b41e735cbbb6aad05862}{get\+Global\+Bounds}} () const
+\item 
+bool \mbox{\hyperlink{classHitboxComponent_a614c2dbae0841f3212ee6cb14e2a7e89}{check\+Intersect}} (const sf\+::\+Float\+Rect \&frect)
+\item 
+void \mbox{\hyperlink{classHitboxComponent_a8bc22e5cd79f53692a0079fe21865025}{update}} ()
+\item 
+void \mbox{\hyperlink{classHitboxComponent_ad4fafddd5893e21485a253b27fc0bea9}{render}} (sf\+::\+Render\+Target \&target)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHitboxComponent_a1533a6f2ade5ceb2c89f059c0e41751a}\label{classHitboxComponent_a1533a6f2ade5ceb2c89f059c0e41751a}} 
+\index{HitboxComponent@{HitboxComponent}!HitboxComponent@{HitboxComponent}}
+\index{HitboxComponent@{HitboxComponent}!HitboxComponent@{HitboxComponent}}
+\doxysubsubsection{\texorpdfstring{HitboxComponent()}{HitboxComponent()}}
+{\footnotesize\ttfamily Hitbox\+Component\+::\+Hitbox\+Component (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{sprite,  }\item[{float}]{offsetX,  }\item[{float}]{offsetY,  }\item[{float}]{width,  }\item[{float}]{height,  }\item[{sf\+::\+Color}]{outline\+Color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHitboxComponent_a57fd2fb82df152e2ddcba0aceb3cce98}\label{classHitboxComponent_a57fd2fb82df152e2ddcba0aceb3cce98}} 
+\index{HitboxComponent@{HitboxComponent}!````~HitboxComponent@{$\sim$HitboxComponent}}
+\index{````~HitboxComponent@{$\sim$HitboxComponent}!HitboxComponent@{HitboxComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$HitboxComponent()}{~HitboxComponent()}}
+{\footnotesize\ttfamily Hitbox\+Component\+::$\sim$\+Hitbox\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHitboxComponent_a614c2dbae0841f3212ee6cb14e2a7e89}\label{classHitboxComponent_a614c2dbae0841f3212ee6cb14e2a7e89}} 
+\index{HitboxComponent@{HitboxComponent}!checkIntersect@{checkIntersect}}
+\index{checkIntersect@{checkIntersect}!HitboxComponent@{HitboxComponent}}
+\doxysubsubsection{\texorpdfstring{checkIntersect()}{checkIntersect()}}
+{\footnotesize\ttfamily bool Hitbox\+Component\+::check\+Intersect (\begin{DoxyParamCaption}\item[{const sf\+::\+Float\+Rect \&}]{frect }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHitboxComponent_a1aaeded1d180b41e735cbbb6aad05862}\label{classHitboxComponent_a1aaeded1d180b41e735cbbb6aad05862}} 
+\index{HitboxComponent@{HitboxComponent}!getGlobalBounds@{getGlobalBounds}}
+\index{getGlobalBounds@{getGlobalBounds}!HitboxComponent@{HitboxComponent}}
+\doxysubsubsection{\texorpdfstring{getGlobalBounds()}{getGlobalBounds()}}
+{\footnotesize\ttfamily const sf\+::\+Float\+Rect Hitbox\+Component\+::get\+Global\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classHitboxComponent_a87ea2f98e1a6bce91e8b9f9d31aad495}\label{classHitboxComponent_a87ea2f98e1a6bce91e8b9f9d31aad495}} 
+\index{HitboxComponent@{HitboxComponent}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!HitboxComponent@{HitboxComponent}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily const sf\+::\+Vector2f \& Hitbox\+Component\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classHitboxComponent_ad4fafddd5893e21485a253b27fc0bea9}\label{classHitboxComponent_ad4fafddd5893e21485a253b27fc0bea9}} 
+\index{HitboxComponent@{HitboxComponent}!render@{render}}
+\index{render@{render}!HitboxComponent@{HitboxComponent}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Hitbox\+Component\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classHitboxComponent_a8bc22e5cd79f53692a0079fe21865025}\label{classHitboxComponent_a8bc22e5cd79f53692a0079fe21865025}} 
+\index{HitboxComponent@{HitboxComponent}!update@{update}}
+\index{update@{update}!HitboxComponent@{HitboxComponent}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Hitbox\+Component\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{HitboxComponent_8hpp}{Hitbox\+Component.\+hpp}}\item 
+\mbox{\hyperlink{HitboxComponent_8cpp}{Hitbox\+Component.\+cpp}}\end{DoxyCompactItemize}

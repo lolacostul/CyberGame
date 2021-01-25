@@ -1,0 +1,87 @@
+\hypertarget{classMovementComponent}{}\doxysection{Movement\+Component Class Reference}
+\label{classMovementComponent}\index{MovementComponent@{MovementComponent}}
+
+
+{\ttfamily \#include $<$Movement\+Component.\+hpp$>$}
+
+
+
+Collaboration diagram for Movement\+Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classMovementComponent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMovementComponent_aa8ff04403685cc7301bb59535edf66c9}{Movement\+Component}} (sf\+::\+Sprite \&sprite, float max\+Velocity, float acceleration, float deceleration)
+\item 
+virtual \mbox{\hyperlink{classMovementComponent_ac39be9eb1437d87cc50404dfb25487e6}{$\sim$\+Movement\+Component}} ()
+\item 
+const sf\+::\+Vector2f \& \mbox{\hyperlink{classMovementComponent_a3e1518aeeafdbe336159bbbe72c4cd89}{get\+Velocity}} () const
+\item 
+const float \& \mbox{\hyperlink{classMovementComponent_aaa66b9ab0a6feddb79666c120b5a50dc}{get\+Max\+Velocity}} () const
+\item 
+const bool \mbox{\hyperlink{classMovementComponent_a5d991681c022928054917ba84093ca6c}{get\+State}} (const short unsigned state) const
+\item 
+void \mbox{\hyperlink{classMovementComponent_adc585c17d7e00142cd09d91714289bf3}{move}} (const float x, const float y, const float \&dt)
+\item 
+void \mbox{\hyperlink{classMovementComponent_a294d0e9fefa263e20b2f4321a2f39eb0}{update}} (const float \&dt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMovementComponent_aa8ff04403685cc7301bb59535edf66c9}\label{classMovementComponent_aa8ff04403685cc7301bb59535edf66c9}} 
+\index{MovementComponent@{MovementComponent}!MovementComponent@{MovementComponent}}
+\index{MovementComponent@{MovementComponent}!MovementComponent@{MovementComponent}}
+\doxysubsubsection{\texorpdfstring{MovementComponent()}{MovementComponent()}}
+{\footnotesize\ttfamily Movement\+Component\+::\+Movement\+Component (\begin{DoxyParamCaption}\item[{sf\+::\+Sprite \&}]{sprite,  }\item[{float}]{max\+Velocity,  }\item[{float}]{acceleration,  }\item[{float}]{deceleration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMovementComponent_ac39be9eb1437d87cc50404dfb25487e6}\label{classMovementComponent_ac39be9eb1437d87cc50404dfb25487e6}} 
+\index{MovementComponent@{MovementComponent}!````~MovementComponent@{$\sim$MovementComponent}}
+\index{````~MovementComponent@{$\sim$MovementComponent}!MovementComponent@{MovementComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$MovementComponent()}{~MovementComponent()}}
+{\footnotesize\ttfamily Movement\+Component\+::$\sim$\+Movement\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMovementComponent_aaa66b9ab0a6feddb79666c120b5a50dc}\label{classMovementComponent_aaa66b9ab0a6feddb79666c120b5a50dc}} 
+\index{MovementComponent@{MovementComponent}!getMaxVelocity@{getMaxVelocity}}
+\index{getMaxVelocity@{getMaxVelocity}!MovementComponent@{MovementComponent}}
+\doxysubsubsection{\texorpdfstring{getMaxVelocity()}{getMaxVelocity()}}
+{\footnotesize\ttfamily const float \& Movement\+Component\+::get\+Max\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMovementComponent_a5d991681c022928054917ba84093ca6c}\label{classMovementComponent_a5d991681c022928054917ba84093ca6c}} 
+\index{MovementComponent@{MovementComponent}!getState@{getState}}
+\index{getState@{getState}!MovementComponent@{MovementComponent}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily const bool Movement\+Component\+::get\+State (\begin{DoxyParamCaption}\item[{const short unsigned}]{state }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMovementComponent_a3e1518aeeafdbe336159bbbe72c4cd89}\label{classMovementComponent_a3e1518aeeafdbe336159bbbe72c4cd89}} 
+\index{MovementComponent@{MovementComponent}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!MovementComponent@{MovementComponent}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
+{\footnotesize\ttfamily const sf\+::\+Vector2f \& Movement\+Component\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classMovementComponent_adc585c17d7e00142cd09d91714289bf3}\label{classMovementComponent_adc585c17d7e00142cd09d91714289bf3}} 
+\index{MovementComponent@{MovementComponent}!move@{move}}
+\index{move@{move}!MovementComponent@{MovementComponent}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Movement\+Component\+::move (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y,  }\item[{const float \&}]{dt }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMovementComponent_a294d0e9fefa263e20b2f4321a2f39eb0}\label{classMovementComponent_a294d0e9fefa263e20b2f4321a2f39eb0}} 
+\index{MovementComponent@{MovementComponent}!update@{update}}
+\index{update@{update}!MovementComponent@{MovementComponent}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Movement\+Component\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{MovementComponent_8hpp}{Movement\+Component.\+hpp}}\item 
+\mbox{\hyperlink{MovementComponent_8cpp}{Movement\+Component.\+cpp}}\end{DoxyCompactItemize}

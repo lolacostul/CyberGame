@@ -1,0 +1,8 @@
+<map id="Player" name="Player">
+<area shape="rect" id="node1" title=" " alt="" coords="170,424,309,619"/>
+<area shape="rect" id="node3" href="$classFixer.html" title=" " alt="" coords="5,667,92,773"/>
+<area shape="rect" id="node4" href="$classGunbreaker.html" title=" " alt="" coords="117,667,234,773"/>
+<area shape="rect" id="node5" href="$classHacker.html" title=" " alt="" coords="259,667,351,773"/>
+<area shape="rect" id="node6" href="$classVolter.html" title=" " alt="" coords="375,667,461,773"/>
+<area shape="rect" id="node2" href="$classCharacter.html" title=" " alt="" coords="155,5,323,376"/>
+</map>

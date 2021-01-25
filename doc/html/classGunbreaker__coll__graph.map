@@ -1,0 +1,9 @@
+<map id="Gunbreaker" name="Gunbreaker">
+<area shape="rect" id="node1" title=" " alt="" coords="289,852,407,959"/>
+<area shape="rect" id="node2" href="$classPlayer.html" title=" " alt="" coords="279,623,417,803"/>
+<area shape="rect" id="node3" href="$classCharacter.html" title=" " alt="" coords="195,233,349,560"/>
+<area shape="rect" id="node4" href="$classHitboxComponent.html" title=" " alt="" coords="5,5,160,171"/>
+<area shape="rect" id="node5" href="$classAnimationComponent.html" title=" " alt="" coords="185,13,359,163"/>
+<area shape="rect" id="node6" href="$classMovementComponent.html" title=" " alt="" coords="384,5,563,171"/>
+<area shape="rect" id="node7" href="$classWeapon.html" title=" " alt="" coords="374,277,477,516"/>
+</map>

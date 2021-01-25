@@ -1,0 +1,79 @@
+\hypertarget{MovementComponent_8hpp}{}\doxysection{Movement\+Component.\+hpp File Reference}
+\label{MovementComponent_8hpp}\index{MovementComponent.hpp@{MovementComponent.hpp}}
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+Window.\+hpp$>$}\newline
+{\ttfamily \#include $<$SFML/\+System.\+hpp$>$}\newline
+Include dependency graph for Movement\+Component.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MovementComponent_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MovementComponent_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMovementComponent}{Movement\+Component}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941}{movement\+States}} \{ \newline
+\mbox{\hyperlink{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941afd6a0e4343048b10646dd2976cc5ad18}{IDLE}} = 0
+, \mbox{\hyperlink{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941a16ebdcb23eb5337fd5bc598fa8d6035d}{MOVING}}
+, \mbox{\hyperlink{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941af2d17378db8b161d333e0dd8e88ebad9}{MOVING\+\_\+\+LEFT}}
+, \mbox{\hyperlink{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941af618166e0dfa62dd63fc0d9f677ca871}{MOVING\+\_\+\+RIGHT}}
+, \newline
+\mbox{\hyperlink{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941ad0d69c60b9d20b96b089b680f8d7566d}{MOVING\+\_\+\+UP}}
+, \mbox{\hyperlink{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941aa9afce301988e16292cfcae76a57d9a8}{MOVING\+\_\+\+DOWN}}
+, \mbox{\hyperlink{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941a05f520974a8946a4b11907b698557a8b}{ATTACKING}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941}\label{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941}} 
+\index{MovementComponent.hpp@{MovementComponent.hpp}!movementStates@{movementStates}}
+\index{movementStates@{movementStates}!MovementComponent.hpp@{MovementComponent.hpp}}
+\doxysubsubsection{\texorpdfstring{movementStates}{movementStates}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941}{movement\+States}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IDLE@{IDLE}!MovementComponent.hpp@{MovementComponent.hpp}}\index{MovementComponent.hpp@{MovementComponent.hpp}!IDLE@{IDLE}}}\mbox{\Hypertarget{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941afd6a0e4343048b10646dd2976cc5ad18}\label{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941afd6a0e4343048b10646dd2976cc5ad18}} 
+IDLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVING@{MOVING}!MovementComponent.hpp@{MovementComponent.hpp}}\index{MovementComponent.hpp@{MovementComponent.hpp}!MOVING@{MOVING}}}\mbox{\Hypertarget{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941a16ebdcb23eb5337fd5bc598fa8d6035d}\label{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941a16ebdcb23eb5337fd5bc598fa8d6035d}} 
+MOVING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVING\_LEFT@{MOVING\_LEFT}!MovementComponent.hpp@{MovementComponent.hpp}}\index{MovementComponent.hpp@{MovementComponent.hpp}!MOVING\_LEFT@{MOVING\_LEFT}}}\mbox{\Hypertarget{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941af2d17378db8b161d333e0dd8e88ebad9}\label{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941af2d17378db8b161d333e0dd8e88ebad9}} 
+MOVING\+\_\+\+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVING\_RIGHT@{MOVING\_RIGHT}!MovementComponent.hpp@{MovementComponent.hpp}}\index{MovementComponent.hpp@{MovementComponent.hpp}!MOVING\_RIGHT@{MOVING\_RIGHT}}}\mbox{\Hypertarget{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941af618166e0dfa62dd63fc0d9f677ca871}\label{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941af618166e0dfa62dd63fc0d9f677ca871}} 
+MOVING\+\_\+\+RIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVING\_UP@{MOVING\_UP}!MovementComponent.hpp@{MovementComponent.hpp}}\index{MovementComponent.hpp@{MovementComponent.hpp}!MOVING\_UP@{MOVING\_UP}}}\mbox{\Hypertarget{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941ad0d69c60b9d20b96b089b680f8d7566d}\label{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941ad0d69c60b9d20b96b089b680f8d7566d}} 
+MOVING\+\_\+\+UP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MOVING\_DOWN@{MOVING\_DOWN}!MovementComponent.hpp@{MovementComponent.hpp}}\index{MovementComponent.hpp@{MovementComponent.hpp}!MOVING\_DOWN@{MOVING\_DOWN}}}\mbox{\Hypertarget{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941aa9afce301988e16292cfcae76a57d9a8}\label{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941aa9afce301988e16292cfcae76a57d9a8}} 
+MOVING\+\_\+\+DOWN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ATTACKING@{ATTACKING}!MovementComponent.hpp@{MovementComponent.hpp}}\index{MovementComponent.hpp@{MovementComponent.hpp}!ATTACKING@{ATTACKING}}}\mbox{\Hypertarget{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941a05f520974a8946a4b11907b698557a8b}\label{MovementComponent_8hpp_ae5b12c3ae2128b62988c97a875252941a05f520974a8946a4b11907b698557a8b}} 
+ATTACKING&\\
+\hline
+
+\end{DoxyEnumFields}

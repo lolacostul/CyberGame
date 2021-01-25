@@ -1,0 +1,260 @@
+\hypertarget{classState}{}\doxysection{State Class Reference}
+\label{classState}\index{State@{State}}
+
+
+{\ttfamily \#include $<$State.\+hpp$>$}
+
+
+
+Inheritance diagram for State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classState_a970569fe825bb7cc18f48fecf4f1b9d1}{State}} (sf\+::\+Render\+Window $\ast$window, std\+::map$<$ std\+::string, int $>$ $\ast$supported\+Keys, std\+::stack$<$ \mbox{\hyperlink{classState}{State}} $\ast$ $>$ $\ast$states)
+\item 
+virtual \mbox{\hyperlink{classState_afab438d92b90dc18d194dbd9c9c8bab3}{$\sim$\+State}} ()
+\item 
+const bool \& \mbox{\hyperlink{classState_a18c3b970753bab2937141803644aaf24}{get\+Quit}} () const
+\item 
+void \mbox{\hyperlink{classState_a27907b80e927649f92e4dc6a845a9213}{end\+State}} ()
+\item 
+virtual void \mbox{\hyperlink{classState_a6a5bc29c3bcc7b51d2beca0e83457203}{update\+Mouse\+Position}} ()
+\item 
+virtual void \mbox{\hyperlink{classState_a00168e8529643611cb98497e9f0b48c2}{update\+Input}} (const float \&dt)=0
+\item 
+virtual void \mbox{\hyperlink{classState_a2c2021d448defc57111202b74ed0aaa0}{update}} (const float \&dt)=0
+\item 
+virtual void \mbox{\hyperlink{classState_a92fa422a8748533704eb163ad3299ca8}{render}} (sf\+::\+Render\+Target $\ast$target=NULL)=0
+\item 
+std\+::string \mbox{\hyperlink{classState_a5b30933effbd28552adac6ddf73ceaac}{to\+String}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classState_a40dbbe230041d608a14cab0268721e3e}{init\+Keybinds}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classState_acd1a5032724ab48ae79dcb83642dc7ef}{init\+Fonts}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::stack$<$ \mbox{\hyperlink{classState}{State}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classState_ad27d5a78de308fa73ae5c5ddd1cccc35}{\+\_\+states}}
+\item 
+sf\+::\+Render\+Window $\ast$ \mbox{\hyperlink{classState_ae71a11aeb18d7b56f74df12b25db1a71}{\+\_\+window}}
+\item 
+std\+::map$<$ std\+::string, int $>$ $\ast$ \mbox{\hyperlink{classState_a4f8fee78abeccb789e0724ff5ecd486d}{\+\_\+supported\+Keys}}
+\item 
+std\+::map$<$ std\+::string, int $>$ \mbox{\hyperlink{classState_a74cabce5cf1c853ee258741fff1fe5d0}{\+\_\+keybinds}}
+\item 
+bool \mbox{\hyperlink{classState_a5a4107925202e254d2b229748dd4fba5}{\+\_\+quit}}
+\item 
+\mbox{\hyperlink{classCharacter}{Character}} \mbox{\hyperlink{classState_ac551d0d478832a0fa5f4487108321df3}{\+\_\+player}}
+\item 
+\mbox{\hyperlink{classCharacter}{Character}} \mbox{\hyperlink{classState_a9c9898adc126976a41947d6db2db6a2a}{\+\_\+monster}}
+\item 
+sf\+::\+Vector2i \mbox{\hyperlink{classState_ae55b0beb4bfe6bb44a9fc1fc05d8b90c}{mouse\+Pos\+Screen}}
+\item 
+sf\+::\+Vector2i \mbox{\hyperlink{classState_ae19be9c58de5545c8cd162f11969d6ee}{mouse\+Pos\+Window}}
+\item 
+sf\+::\+Vector2f \mbox{\hyperlink{classState_a9f930912be370fcd0ecae58e17e0c35e}{mouse\+Pos\+View}}
+\item 
+sf\+::\+Font \mbox{\hyperlink{classState_a63420defbd0d364633fb7df1291e3420}{\+\_\+font}}
+\item 
+std\+::map$<$ std\+::string, sf\+::\+Texture $>$ \mbox{\hyperlink{classState_ab55228369ace0e4da9b6fa1275e9bcbd}{\+\_\+textures}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{classState_ab9665f744170632ce64291a714a0690a}{operator$<$$<$}} (std\+::ostream \&out, \mbox{\hyperlink{classState}{State}} const \&s)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classState_a970569fe825bb7cc18f48fecf4f1b9d1}\label{classState_a970569fe825bb7cc18f48fecf4f1b9d1}} 
+\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{State()}{State()}}
+{\footnotesize\ttfamily State\+::\+State (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window,  }\item[{std\+::map$<$ std\+::string, int $>$ $\ast$}]{supported\+Keys,  }\item[{std\+::stack$<$ \mbox{\hyperlink{classState}{State}} $\ast$ $>$ $\ast$}]{states }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classState_afab438d92b90dc18d194dbd9c9c8bab3}\label{classState_afab438d92b90dc18d194dbd9c9c8bab3}} 
+\index{State@{State}!````~State@{$\sim$State}}
+\index{````~State@{$\sim$State}!State@{State}}
+\doxysubsubsection{\texorpdfstring{$\sim$State()}{~State()}}
+{\footnotesize\ttfamily State\+::$\sim$\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classState_a27907b80e927649f92e4dc6a845a9213}\label{classState_a27907b80e927649f92e4dc6a845a9213}} 
+\index{State@{State}!endState@{endState}}
+\index{endState@{endState}!State@{State}}
+\doxysubsubsection{\texorpdfstring{endState()}{endState()}}
+{\footnotesize\ttfamily void State\+::end\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classState_a18c3b970753bab2937141803644aaf24}\label{classState_a18c3b970753bab2937141803644aaf24}} 
+\index{State@{State}!getQuit@{getQuit}}
+\index{getQuit@{getQuit}!State@{State}}
+\doxysubsubsection{\texorpdfstring{getQuit()}{getQuit()}}
+{\footnotesize\ttfamily const bool \& State\+::get\+Quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classState_acd1a5032724ab48ae79dcb83642dc7ef}\label{classState_acd1a5032724ab48ae79dcb83642dc7ef}} 
+\index{State@{State}!initFonts@{initFonts}}
+\index{initFonts@{initFonts}!State@{State}}
+\doxysubsubsection{\texorpdfstring{initFonts()}{initFonts()}}
+{\footnotesize\ttfamily void State\+::init\+Fonts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classState_a40dbbe230041d608a14cab0268721e3e}\label{classState_a40dbbe230041d608a14cab0268721e3e}} 
+\index{State@{State}!initKeybinds@{initKeybinds}}
+\index{initKeybinds@{initKeybinds}!State@{State}}
+\doxysubsubsection{\texorpdfstring{initKeybinds()}{initKeybinds()}}
+{\footnotesize\ttfamily virtual void State\+::init\+Keybinds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classState_a92fa422a8748533704eb163ad3299ca8}\label{classState_a92fa422a8748533704eb163ad3299ca8}} 
+\index{State@{State}!render@{render}}
+\index{render@{render}!State@{State}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily virtual void State\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMainMenuState_a1b136682777c847c418735542d2e4fc1}{Main\+Menu\+State}}, and \mbox{\hyperlink{classGameState_ae49b20a5455335d879340dbe3b92da7f}{Game\+State}}.
+
+\mbox{\Hypertarget{classState_a5b30933effbd28552adac6ddf73ceaac}\label{classState_a5b30933effbd28552adac6ddf73ceaac}} 
+\index{State@{State}!toString@{toString}}
+\index{toString@{toString}!State@{State}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string State\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classState_a2c2021d448defc57111202b74ed0aaa0}\label{classState_a2c2021d448defc57111202b74ed0aaa0}} 
+\index{State@{State}!update@{update}}
+\index{update@{update}!State@{State}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void State\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMainMenuState_a2cb233d69d9e30f8c4ac24f256d6a3d1}{Main\+Menu\+State}}, and \mbox{\hyperlink{classGameState_ac135e64a5c269ecc94d806ed5255ca4b}{Game\+State}}.
+
+\mbox{\Hypertarget{classState_a00168e8529643611cb98497e9f0b48c2}\label{classState_a00168e8529643611cb98497e9f0b48c2}} 
+\index{State@{State}!updateInput@{updateInput}}
+\index{updateInput@{updateInput}!State@{State}}
+\doxysubsubsection{\texorpdfstring{updateInput()}{updateInput()}}
+{\footnotesize\ttfamily virtual void State\+::update\+Input (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classMainMenuState_ac5b27a5cc3bc385984564444b31c09b6}{Main\+Menu\+State}}, and \mbox{\hyperlink{classGameState_a5dc4ac4f28b9487c9e35b8c452c7c58f}{Game\+State}}.
+
+\mbox{\Hypertarget{classState_a6a5bc29c3bcc7b51d2beca0e83457203}\label{classState_a6a5bc29c3bcc7b51d2beca0e83457203}} 
+\index{State@{State}!updateMousePosition@{updateMousePosition}}
+\index{updateMousePosition@{updateMousePosition}!State@{State}}
+\doxysubsubsection{\texorpdfstring{updateMousePosition()}{updateMousePosition()}}
+{\footnotesize\ttfamily void State\+::update\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classState_ab9665f744170632ce64291a714a0690a}\label{classState_ab9665f744170632ce64291a714a0690a}} 
+\index{State@{State}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!State@{State}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out,  }\item[{\mbox{\hyperlink{classState}{State}} const \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classState_a63420defbd0d364633fb7df1291e3420}\label{classState_a63420defbd0d364633fb7df1291e3420}} 
+\index{State@{State}!\_font@{\_font}}
+\index{\_font@{\_font}!State@{State}}
+\doxysubsubsection{\texorpdfstring{\_font}{\_font}}
+{\footnotesize\ttfamily sf\+::\+Font State\+::\+\_\+font\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classState_a74cabce5cf1c853ee258741fff1fe5d0}\label{classState_a74cabce5cf1c853ee258741fff1fe5d0}} 
+\index{State@{State}!\_keybinds@{\_keybinds}}
+\index{\_keybinds@{\_keybinds}!State@{State}}
+\doxysubsubsection{\texorpdfstring{\_keybinds}{\_keybinds}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, int$>$ State\+::\+\_\+keybinds\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classState_a9c9898adc126976a41947d6db2db6a2a}\label{classState_a9c9898adc126976a41947d6db2db6a2a}} 
+\index{State@{State}!\_monster@{\_monster}}
+\index{\_monster@{\_monster}!State@{State}}
+\doxysubsubsection{\texorpdfstring{\_monster}{\_monster}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCharacter}{Character}} State\+::\+\_\+monster\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classState_ac551d0d478832a0fa5f4487108321df3}\label{classState_ac551d0d478832a0fa5f4487108321df3}} 
+\index{State@{State}!\_player@{\_player}}
+\index{\_player@{\_player}!State@{State}}
+\doxysubsubsection{\texorpdfstring{\_player}{\_player}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCharacter}{Character}} State\+::\+\_\+player\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classState_a5a4107925202e254d2b229748dd4fba5}\label{classState_a5a4107925202e254d2b229748dd4fba5}} 
+\index{State@{State}!\_quit@{\_quit}}
+\index{\_quit@{\_quit}!State@{State}}
+\doxysubsubsection{\texorpdfstring{\_quit}{\_quit}}
+{\footnotesize\ttfamily bool State\+::\+\_\+quit\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classState_ad27d5a78de308fa73ae5c5ddd1cccc35}\label{classState_ad27d5a78de308fa73ae5c5ddd1cccc35}} 
+\index{State@{State}!\_states@{\_states}}
+\index{\_states@{\_states}!State@{State}}
+\doxysubsubsection{\texorpdfstring{\_states}{\_states}}
+{\footnotesize\ttfamily std\+::stack$<$\mbox{\hyperlink{classState}{State}}$\ast$$>$$\ast$ State\+::\+\_\+states\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classState_a4f8fee78abeccb789e0724ff5ecd486d}\label{classState_a4f8fee78abeccb789e0724ff5ecd486d}} 
+\index{State@{State}!\_supportedKeys@{\_supportedKeys}}
+\index{\_supportedKeys@{\_supportedKeys}!State@{State}}
+\doxysubsubsection{\texorpdfstring{\_supportedKeys}{\_supportedKeys}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, int$>$$\ast$ State\+::\+\_\+supported\+Keys\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classState_ab55228369ace0e4da9b6fa1275e9bcbd}\label{classState_ab55228369ace0e4da9b6fa1275e9bcbd}} 
+\index{State@{State}!\_textures@{\_textures}}
+\index{\_textures@{\_textures}!State@{State}}
+\doxysubsubsection{\texorpdfstring{\_textures}{\_textures}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, sf\+::\+Texture$>$ State\+::\+\_\+textures\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classState_ae71a11aeb18d7b56f74df12b25db1a71}\label{classState_ae71a11aeb18d7b56f74df12b25db1a71}} 
+\index{State@{State}!\_window@{\_window}}
+\index{\_window@{\_window}!State@{State}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window$\ast$ State\+::\+\_\+window\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classState_ae55b0beb4bfe6bb44a9fc1fc05d8b90c}\label{classState_ae55b0beb4bfe6bb44a9fc1fc05d8b90c}} 
+\index{State@{State}!mousePosScreen@{mousePosScreen}}
+\index{mousePosScreen@{mousePosScreen}!State@{State}}
+\doxysubsubsection{\texorpdfstring{mousePosScreen}{mousePosScreen}}
+{\footnotesize\ttfamily sf\+::\+Vector2i State\+::mouse\+Pos\+Screen\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classState_a9f930912be370fcd0ecae58e17e0c35e}\label{classState_a9f930912be370fcd0ecae58e17e0c35e}} 
+\index{State@{State}!mousePosView@{mousePosView}}
+\index{mousePosView@{mousePosView}!State@{State}}
+\doxysubsubsection{\texorpdfstring{mousePosView}{mousePosView}}
+{\footnotesize\ttfamily sf\+::\+Vector2f State\+::mouse\+Pos\+View\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classState_ae19be9c58de5545c8cd162f11969d6ee}\label{classState_ae19be9c58de5545c8cd162f11969d6ee}} 
+\index{State@{State}!mousePosWindow@{mousePosWindow}}
+\index{mousePosWindow@{mousePosWindow}!State@{State}}
+\doxysubsubsection{\texorpdfstring{mousePosWindow}{mousePosWindow}}
+{\footnotesize\ttfamily sf\+::\+Vector2i State\+::mouse\+Pos\+Window\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{State_8hpp}{State.\+hpp}}\item 
+\mbox{\hyperlink{State_8cpp}{State.\+cpp}}\end{DoxyCompactItemize}

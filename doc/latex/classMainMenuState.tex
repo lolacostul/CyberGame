@@ -1,0 +1,134 @@
+\hypertarget{classMainMenuState}{}\doxysection{Main\+Menu\+State Class Reference}
+\label{classMainMenuState}\index{MainMenuState@{MainMenuState}}
+
+
+{\ttfamily \#include $<$Main\+Menu\+State.\+hpp$>$}
+
+
+
+Inheritance diagram for Main\+Menu\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMainMenuState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Menu\+State\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMainMenuState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMainMenuState_a50733c72ed39f04b1d56c35d4b0b8ffa}{Main\+Menu\+State}} (sf\+::\+Render\+Window $\ast$window, std\+::map$<$ std\+::string, int $>$ $\ast$supported\+Keys, std\+::stack$<$ \mbox{\hyperlink{classState}{State}} $\ast$ $>$ $\ast$states)
+\item 
+virtual \mbox{\hyperlink{classMainMenuState_a8af4d586b93c315a1a15b5fe83ec0760}{$\sim$\+Main\+Menu\+State}} ()
+\item 
+void \mbox{\hyperlink{classMainMenuState_a7cd6927472c54518792d23770be74f44}{show}} ()
+\item 
+void \mbox{\hyperlink{classMainMenuState_a8f255b5ceed77d9014ea0c8a3286df47}{select\+Class}} ()
+\item 
+void \mbox{\hyperlink{classMainMenuState_a17d7f9052159b6bf4e02e0d6942d0f8c}{select\+Race}} ()
+\item 
+void \mbox{\hyperlink{classMainMenuState_ac5b27a5cc3bc385984564444b31c09b6}{update\+Input}} (const float \&dt)
+\item 
+void \mbox{\hyperlink{classMainMenuState_a814fcf755b02804447b0460a57e25833}{update\+Buttons}} ()
+\item 
+void \mbox{\hyperlink{classMainMenuState_a2cb233d69d9e30f8c4ac24f256d6a3d1}{update}} (const float \&dt)
+\item 
+void \mbox{\hyperlink{classMainMenuState_a1a2766e02c64d370018588a79d32b584}{render\+Buttons}} (sf\+::\+Render\+Target \&target)
+\item 
+void \mbox{\hyperlink{classMainMenuState_a1b136682777c847c418735542d2e4fc1}{render}} (sf\+::\+Render\+Target $\ast$target=NULL)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMainMenuState_a50733c72ed39f04b1d56c35d4b0b8ffa}\label{classMainMenuState_a50733c72ed39f04b1d56c35d4b0b8ffa}} 
+\index{MainMenuState@{MainMenuState}!MainMenuState@{MainMenuState}}
+\index{MainMenuState@{MainMenuState}!MainMenuState@{MainMenuState}}
+\doxysubsubsection{\texorpdfstring{MainMenuState()}{MainMenuState()}}
+{\footnotesize\ttfamily Main\+Menu\+State\+::\+Main\+Menu\+State (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window $\ast$}]{window,  }\item[{std\+::map$<$ std\+::string, int $>$ $\ast$}]{supported\+Keys,  }\item[{std\+::stack$<$ \mbox{\hyperlink{classState}{State}} $\ast$ $>$ $\ast$}]{states }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMainMenuState_a8af4d586b93c315a1a15b5fe83ec0760}\label{classMainMenuState_a8af4d586b93c315a1a15b5fe83ec0760}} 
+\index{MainMenuState@{MainMenuState}!````~MainMenuState@{$\sim$MainMenuState}}
+\index{````~MainMenuState@{$\sim$MainMenuState}!MainMenuState@{MainMenuState}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainMenuState()}{~MainMenuState()}}
+{\footnotesize\ttfamily Main\+Menu\+State\+::$\sim$\+Main\+Menu\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMainMenuState_a1b136682777c847c418735542d2e4fc1}\label{classMainMenuState_a1b136682777c847c418735542d2e4fc1}} 
+\index{MainMenuState@{MainMenuState}!render@{render}}
+\index{render@{render}!MainMenuState@{MainMenuState}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Main\+Menu\+State\+::render (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target $\ast$}]{target = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_a92fa422a8748533704eb163ad3299ca8}{State}}.
+
+\mbox{\Hypertarget{classMainMenuState_a1a2766e02c64d370018588a79d32b584}\label{classMainMenuState_a1a2766e02c64d370018588a79d32b584}} 
+\index{MainMenuState@{MainMenuState}!renderButtons@{renderButtons}}
+\index{renderButtons@{renderButtons}!MainMenuState@{MainMenuState}}
+\doxysubsubsection{\texorpdfstring{renderButtons()}{renderButtons()}}
+{\footnotesize\ttfamily void Main\+Menu\+State\+::render\+Buttons (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{target }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMainMenuState_a8f255b5ceed77d9014ea0c8a3286df47}\label{classMainMenuState_a8f255b5ceed77d9014ea0c8a3286df47}} 
+\index{MainMenuState@{MainMenuState}!selectClass@{selectClass}}
+\index{selectClass@{selectClass}!MainMenuState@{MainMenuState}}
+\doxysubsubsection{\texorpdfstring{selectClass()}{selectClass()}}
+{\footnotesize\ttfamily void Main\+Menu\+State\+::select\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMainMenuState_a17d7f9052159b6bf4e02e0d6942d0f8c}\label{classMainMenuState_a17d7f9052159b6bf4e02e0d6942d0f8c}} 
+\index{MainMenuState@{MainMenuState}!selectRace@{selectRace}}
+\index{selectRace@{selectRace}!MainMenuState@{MainMenuState}}
+\doxysubsubsection{\texorpdfstring{selectRace()}{selectRace()}}
+{\footnotesize\ttfamily void Main\+Menu\+State\+::select\+Race (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMainMenuState_a7cd6927472c54518792d23770be74f44}\label{classMainMenuState_a7cd6927472c54518792d23770be74f44}} 
+\index{MainMenuState@{MainMenuState}!show@{show}}
+\index{show@{show}!MainMenuState@{MainMenuState}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Main\+Menu\+State\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMainMenuState_a2cb233d69d9e30f8c4ac24f256d6a3d1}\label{classMainMenuState_a2cb233d69d9e30f8c4ac24f256d6a3d1}} 
+\index{MainMenuState@{MainMenuState}!update@{update}}
+\index{update@{update}!MainMenuState@{MainMenuState}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Main\+Menu\+State\+::update (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_a2c2021d448defc57111202b74ed0aaa0}{State}}.
+
+\mbox{\Hypertarget{classMainMenuState_a814fcf755b02804447b0460a57e25833}\label{classMainMenuState_a814fcf755b02804447b0460a57e25833}} 
+\index{MainMenuState@{MainMenuState}!updateButtons@{updateButtons}}
+\index{updateButtons@{updateButtons}!MainMenuState@{MainMenuState}}
+\doxysubsubsection{\texorpdfstring{updateButtons()}{updateButtons()}}
+{\footnotesize\ttfamily void Main\+Menu\+State\+::update\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMainMenuState_ac5b27a5cc3bc385984564444b31c09b6}\label{classMainMenuState_ac5b27a5cc3bc385984564444b31c09b6}} 
+\index{MainMenuState@{MainMenuState}!updateInput@{updateInput}}
+\index{updateInput@{updateInput}!MainMenuState@{MainMenuState}}
+\doxysubsubsection{\texorpdfstring{updateInput()}{updateInput()}}
+{\footnotesize\ttfamily void Main\+Menu\+State\+::update\+Input (\begin{DoxyParamCaption}\item[{const float \&}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classState_a00168e8529643611cb98497e9f0b48c2}{State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{MainMenuState_8hpp}{Main\+Menu\+State.\+hpp}}\item 
+\mbox{\hyperlink{MainMenuState_8cpp}{Main\+Menu\+State.\+cpp}}\end{DoxyCompactItemize}
